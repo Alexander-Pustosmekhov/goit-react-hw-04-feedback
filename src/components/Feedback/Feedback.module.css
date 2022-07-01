@@ -1,0 +1,33 @@
+.Feedback {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.buttonList {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  border: 1px solid gray;
+  width: 90px;
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.statistics {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}

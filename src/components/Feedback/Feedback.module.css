@@ -11,20 +11,20 @@
   margin-bottom: 20px;
 }
 
-.buttonList {
+/* .buttonList {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-}
+} */
 
-.button {
+/* .button {
   border: 1px solid gray;
   width: 90px;
-}
+} */
 
-.button:not(:last-child) {
+/* .button:not(:last-child) {
   margin-right: 10px;
-}
+} */
 
 .statistics {
   text-align: center;

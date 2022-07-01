@@ -1,0 +1,19 @@
+.buttonList {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.button {
+  border: 1px solid gray;
+  width: 90px;
+  border-radius: 5px;
+  background-color: teal;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnList:not(:last-child) {
+  margin-right: 10px;
+}

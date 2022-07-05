@@ -4,15 +4,16 @@ import s from './Statistics.module.css';
 
 class Statistics extends React.Component {
   render() {
+    const { good, neutral, bad, total, positivePercentage } = this.props;
     return (
       <ul>
-        <li className={s.item}>Good: {this.props.good}</li>
-        <li className={s.item}>Neutral: {this.props.neutral}</li>
-        <li className={s.item}>Bad: {this.props.bad}</li>
-        <li className={s.item}>Total: {this.props.total}</li>
+        <li className={s.item}>Good: {good}</li>
+        <li className={s.item}>Neutral: {neutral}</li>
+        <li className={s.item}>Bad: {bad}</li>
+        <li className={s.item}>Total: {total}</li>
         <li className={s.item}>
           Positive feedback:{' '}
-          {this.props.positivePercentage ? this.props.positivePercentage : 0}
+          {this.props.positivePercentage ? positivePercentage : 0}
           {'%'}
         </li>
       </ul>

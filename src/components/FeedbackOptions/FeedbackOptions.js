@@ -4,16 +4,17 @@ import s from '../FeedbackOptions/FeedbackOptions.module.css';
 
 class FeedbackOptions extends React.Component {
   render() {
+    const { options, onLeaveFeedback } = this.props;
     return (
       <ul className={s.buttonList}>
-        {this.props.options.map((el, index) => {
+        {options.map((el, index) => {
           return (
             <li key={index} className={s.btnList}>
               <button
                 type="button"
                 className={s.button}
                 onClick={() => {
-                  this.props.onLeaveFeedback(el);
+                  onLeaveFeedback(el);
                 }}
               >
                 {el}
